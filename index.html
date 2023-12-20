@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="home container">
+        <div class="head text-center mt-5 mb-5 pt-3 pb-3 ">
+            <h1 class="border-buttom">Bookmarker</h1>
+        </div>
+        <div class="inputheader d-flex aline-items-center justify-content-center">
+            <h2><i class="fa-solid fa-bookmark pe-2"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark ps-2"></i></h2>
+        </div>
+        <div class="form mt-5 container">
+            <label for="siteName" class="fw-bolder fs-6"> <i class="fa-solid fa-book-bookmark pe-2 pb-2"></i>Site Name</label>
+            <input type="text"class="form-control " placeholder="Bookmark Name" id="siteName" >
+
+            <label for="siteURL" class="fw-bolder fs-6 mt-4"> <i class="fa-solid fa-link pe-2"></i>Site URL</label>
+            <input type="text"class="form-control " placeholder="Website URL" id="siteURL" >
+            <div class="submitntm">
+                <button id="btnSubmit" onclick="ckeckinputs()" class="btn btn-danger submit mt-4">Submit</button>
+            </div>
+        </div>
+        <table class="table bg-white mt-4 text-center fw-bolder  ">
+            <thead class="border-buttom">
+                <th>Index</th>
+                <th>Website Name</th>
+                <th>Website Name</th>
+                <th>Website Name</th>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+    </section>
+
+<script src="particles.js"></script>
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

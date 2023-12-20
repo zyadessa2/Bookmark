@@ -1,0 +1,66 @@
+body{
+    background-color: #F7ECDE;
+}
+.head h1{
+    color: black;
+    font-size: 50px;
+    font-weight: 500;
+    width: fit-content;
+    position: relative;
+    margin: auto;
+    font-family: 'Pacifico';
+}
+.head h1::before{
+position: absolute;
+content: "";
+background-color: #FEC260;
+width: 100%;
+height: 20px;
+bottom: 0;
+z-index: -1;
+transition: 5s;
+}
+.head h1:hover {
+    height: 70px;
+    
+}
+
+.inputheader {
+    align-items: center;
+}
+.inputheader h2{
+    border-top:2px dotted black ;
+    width: 100%;
+    text-align: center;
+    padding-top: 40px;
+    color: #A3AB4C;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.submitntm {
+    border-bottom:2px dotted black ;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.submit{
+    margin: auto;
+    display: flex;
+}
+.btn-visit{
+    background-color: #9eb23b;
+    color: white;
+    font-weight: 500;
+
+}
+.btn-visit:hover{
+    background-color: #6e7c29 !important;
+    color: #F7ECDE;
+}
+
+#particles-js{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
